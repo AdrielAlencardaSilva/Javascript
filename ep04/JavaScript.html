@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Condições em JavaScript</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel">km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular() {
+            var txtv = window.document.querySelector('input#txtvel')
+            var res = window.document.querySelector('div#res')
+            var vel = Number (txtv.value)
+            res.innerHTML = `<p>Sua velocidade é de <strong>${vel}</strong>km/h</p>`
+            if (vel > 80) {
+                res.innerHTML += `<p>Você está <strong>MULTADO!</strong></p>`
+            }
+        }
+    </script>
+    
+    <h2>Condiçôes em JavaScript parte 2</h2>
+    Número <input type="number" name="num" id="num">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="resp">
+    
+    </div>
+
+    <script>
+        function verificar() {
+            var txt = window.document.querySelector('input#num')
+            var resp = window.document.querySelector('div#resp')
+            var numero = Number (txt.value)
+            resp.innerHTML = `<p>Seu número é <strong>${numero}</strong></p>`
+            if (numero == 50) {
+                resp.innerHTML += `<p>Você <strong>ganhou!</strong></p>`
+            } else{ (numero != 50) 
+                resp.innerHTML += `<p>Você não <strong>ganhou</strong></p>`
+            }
+        } 
+    </script>
+
+    
+</body>
+</html>
