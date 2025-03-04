@@ -1,0 +1,41 @@
+ body{
+    background-image: url(toji.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+ }
+h1{
+    color: white;
+}
+h2{
+    color: white;
+}
+h3{
+    color: white;
+    font-size: 1.3em;
+}
+div#res{
+    color: white;
+    font-size: 2em;
+}
+div#resposta{
+   font-size: 2em;
+}
+
+
+@media screen and (min-width: 1000px) {
+    body{
+        background-image: url(toji2.png);
+    }
+    h3{
+        font-size: 2em;
+    }
+    input{
+        padding: 8px;
+    }
+    div#resposta{
+        font-size: 2em;
+        margin-top: 10px;
+    }
+}
+
