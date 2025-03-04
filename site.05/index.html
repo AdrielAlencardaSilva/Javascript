@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return</title>
+    <style>
+        body{
+            background-color: rgb(47, 47, 255);
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+        h2{
+            text-align: center;
+        }
+        section{
+            width: 500px;
+            background-color: white;
+            border-radius: 10px;
+            margin: auto;
+            display: block;
+            padding: 15px;
+        }
+        #res{
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Notas escolares</h1>
+    </header>
+    <section>
+        <div>
+            <h2>Media do bimestre</h2>
+            <p>Nome: <input type="text" name="nome" id="nome"></p>
+            <p>Serie: <input type="text" name="serie" id="serie"></p>
+            <input type="button" value="verificar" onclick="verificar()">
+        </div>
+        <div id="res">
+
+        </div>
+        
+    </section>
+   
+    <script>
+        function verificar() {
+         
+           function verificar(m) {
+        
+            if (m >= 6) {
+                return 'Aprovado!'
+            } else {
+                return 'Reprovado!'
+            }
+           }
+           res.innerHTML = (verificar(8))
+          
+        }
+      
+    </script>
+    
+</body>
+</html>
