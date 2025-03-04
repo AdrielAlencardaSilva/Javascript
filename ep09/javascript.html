@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores</title>
+    <style>
+        div#res{
+            margin-top: 10px;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Utilizando vetores com estrutura de repetição</h1>
+    <input type="button" value="vetores" onclick="vetores()">
+    <div id="res"> 
+
+    </div>
+    <script>
+           function vetores() {
+           var valores = [9, 8, 1, 4]
+           valores.sort()
+           res.innerHTML = `(${valores})  `
+           for (var v in valores)
+           res.innerHTML += `  Na posição ${v} está o valor ${valores[v]} /`
+        } 
+      
+       
+    </script>
+</body>
+</html>
