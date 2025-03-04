@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style02.css">
+    <script>
+        function entrar() {
+            var n = document.getElementById('nome')
+            var i = document.getElementById('idade')
+            var e = document.getElementById('email')
+            
+            if(n.value.length == 0 || i.value.length == 0 || e.value.length == 0) {
+                window.alert  ('Você não preencheu o formulário!')
+                window.alert ('')
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Formulário <a href="">ge</a></h1>
+    </header>
+    <section>
+        <div>
+            <h2>Preencha o formulário</h2>
+           <p> Nome: <input type="text" name="nome" id="nome"></p>
+           <label for="nome"></label>
+           <p> Idade: <input type="number" name="idade" id="idade"></p>
+           <label for="idade"></label>
+           <p>Email: <input type="email" name="email" id="email"></p>
+           <label for="email"></label>
+           <p id="p"><a href="site.html"><input type="button" value="Entrar" onclick="entrar()"></a></p>
+        </div>
+         
+    </section>
+    
+</body>
+</html>
